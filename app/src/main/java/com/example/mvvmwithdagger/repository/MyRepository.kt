@@ -1,6 +1,6 @@
 package com.example.mvvmwithdagger.repository
 
-import com.example.mvvmwithdagger.module.People
+import com.example.mvvmwithdagger.model.People
 
 class MyRepository {
 

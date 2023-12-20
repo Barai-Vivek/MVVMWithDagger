@@ -1,4 +1,4 @@
-package com.example.mvvmwithdagger.module
+package com.example.mvvmwithdagger.model
 
 data class People (
     val imageUrl:String = "",

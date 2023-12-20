@@ -7,8 +7,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mvvmwithdagger.adapter.PeopleAdapter
 import com.example.mvvmwithdagger.component.DaggerAppComponent
 import com.example.mvvmwithdagger.databinding.ActivityMainBinding
-import com.example.mvvmwithdagger.model.MyViewModel
-import com.example.mvvmwithdagger.module.People
+import com.example.mvvmwithdagger.viewmodel.MyViewModel
+import com.example.mvvmwithdagger.model.People
 import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {

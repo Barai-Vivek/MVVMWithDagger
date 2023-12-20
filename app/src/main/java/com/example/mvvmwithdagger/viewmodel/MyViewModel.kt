@@ -1,10 +1,10 @@
-package com.example.mvvmwithdagger.model
+package com.example.mvvmwithdagger.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.mvvmwithdagger.module.People
+import com.example.mvvmwithdagger.model.People
 import com.example.mvvmwithdagger.repository.MyRepository
 import kotlinx.coroutines.launch
 

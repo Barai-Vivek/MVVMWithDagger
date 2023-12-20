@@ -1,6 +1,6 @@
 package com.example.mvvmwithdagger.module
 
-import com.example.mvvmwithdagger.model.MyViewModel
+import com.example.mvvmwithdagger.viewmodel.MyViewModel
 import com.example.mvvmwithdagger.repository.MyRepository
 import dagger.Module
 import dagger.Provides

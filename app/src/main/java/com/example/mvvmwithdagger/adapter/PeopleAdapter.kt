@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.mvvmwithdagger.databinding.PeopleAdapterItemBinding
-import com.example.mvvmwithdagger.module.People
+import com.example.mvvmwithdagger.model.People
 
 
 class PeopleAdapter(private val context:Context, private val peopleList:List<People>):RecyclerView.Adapter<PeopleAdapter.ViewHolder>() {
