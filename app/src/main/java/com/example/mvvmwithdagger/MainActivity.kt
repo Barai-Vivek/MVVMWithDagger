@@ -41,17 +41,18 @@ class MainActivity : AppCompatActivity() {
 
         binding.floatingActionButton.setOnClickListener{
             binding.progressBar.visibility = View.VISIBLE
-            val peopleItem = People(imageUrl,
-                "User"
+            val itemCount = peopleAdapter?.itemCount?:0
+            val peopleItem = People(
+                "$imageUrl${(itemCount+1)}/120/120",
+                "User ${(itemCount+1)}"
             )
             viewModel.insertItem(peopleItem)
-            binding.peopleRecyclerView.smoothScrollToPosition(peopleAdapter?.itemCount?:0)
+            binding.peopleRecyclerView.smoothScrollToPosition(itemCount)
         }
 
-
         // initial 1 item example usage
-        val peopleItem = People(imageUrl,
-            "User"
+        val peopleItem = People("$imageUrl/1/120/120",
+            "User 1"
         )
         viewModel.insertItem(peopleItem)
     }
@@ -60,7 +61,7 @@ class MainActivity : AppCompatActivity() {
         // Initialize the PeopleAdapter when the Activity is created
         val peopleList = viewModel.items.value
         peopleAdapter = peopleList?.let {
-            PeopleAdapter(this@MainActivity, it)
+            PeopleAdapter(it)
         }
 
         // Now you can use the peopleAdapter as needed
